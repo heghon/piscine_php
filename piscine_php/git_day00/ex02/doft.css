@@ -1,0 +1,227 @@
+body
+{
+    background-color: #4d4d4d;
+}
+strong
+{
+    font-size: 50px;
+    font-weight: normal;
+}
+#bandeau
+{
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    height: 155px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 10px 10px 5px #1c1a19;
+    background-color: #919191;
+}
+#box
+{
+    position: relative;
+    margin-left: 290px;
+    margin-right: 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#left_panel
+{
+    position: relative;
+    box-shadow: 10px 10px 5px #1c1a19;
+    background-color: #919191;
+    border-radius: 10px;
+    width: 150px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#central_screen
+{
+    position: relative;
+    box-shadow: 10px 10px 5px #1c1a19;
+    background-color: #919191;
+    border-radius: 10px;
+    width: 1300px;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#right_panel
+{
+    position: relative;
+    box-shadow: 10px 10px 5px #1c1a19;
+    background-color: #919191;
+    border-radius: 10px;
+    width: 150px;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+}
+#chat_box
+{
+    position: absolute;
+    box-shadow: 10px 10px 5px #1c1a19;
+    background-color: #99ff66;
+    border-radius: 10px;
+    width: 600px;
+    height: 240px;
+    top: 850px;
+    left: 200px;
+    font-size: 25px;
+    padding-left: 10px;
+}
+#banniere
+{
+    position: absolute;
+    top: 5px;
+    left : 5px;
+    height: 145px;
+    width: auto;
+}
+figure
+{
+    display: inline-block; 
+}
+#loupe
+{
+    width: 320px;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    right: 35px;
+}
+#reload
+{
+    width: 25px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;  
+}
+#close
+{
+    width: 25px;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;  
+}
+#arrow
+{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    top: 10px;
+}
+#arrow:hover
+{
+    border : 5px red solid;
+}
+#main
+{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+}
+#main:hover
+{
+    border : 5px red solid;
+}
+#oeil
+{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 190px;
+}
+#oeil:hover
+{
+    border : 5px red solid;
+}
+#outil
+{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 280px;
+}
+#outil:hover
+{
+    border : 5px red solid;
+}
+#chat
+{
+    width: 80px;
+    height: auto;
+    position: absolute;   
+    top: 370px;
+}
+#chat:hover
+{
+    border : 5px red solid;
+}
+#cluster
+{
+    width: 1280px;
+    height: auto;
+}
+#book
+{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    top: 10px;
+}
+#towel
+{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 160px;
+}
+#mur
+{
+    width: 130px;
+    height: 65px;
+    position: absolute;
+    top: 230px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#mur:hover
+#chat_line
+{
+    width: 450px;
+}
+#chaise
+{
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: 280px;
+    top: 420px;
+    left: 410px;
+}
+#ordi
+{
+    display: block;
+    position: absolute;
+    width: 260px;
+    height: 200px;
+    bottom: 120px;
+    right: 30px;
+}

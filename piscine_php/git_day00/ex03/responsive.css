@@ -1,0 +1,85 @@
+body
+{
+    background: url("http://nextews.com/images/7b/29/7b29b3787e760ed7.jpg") fixed no-repeat top right;
+}
+table
+{
+    border-collapse: collapse;
+}
+td
+{
+    border: 1px solid black;
+    width: 5.5%;
+}
+tr
+{
+    height: 10%;
+}
+.poids
+{
+    font-size: 0.7vw;
+    text-align: right;
+}
+.symbole
+{
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+}
+.numero
+{
+    font-size: 0.8vw;
+}
+p
+{
+    margin: 0%;
+}
+.numbers
+{
+    text-align: center;
+    font-size: 1.2vw;
+}
+.metal_alcalin
+{
+    background-color: #ff8080;
+}
+.metal_alcalino_terreux
+{
+    background-color: #ffb380;
+}
+.metal_de_transition
+{
+    background-color: #ff80d5;
+}
+.metal_pauvre
+{
+    background-color: #b3b3cc;
+}
+.lanthanide
+{
+    background-color: #df9fdf;
+}
+.actinide
+{
+    background-color: #df80ff;
+}
+.metalloide
+{
+    background-color: #dfbf9f;
+}
+.non_metal
+{
+    background-color: #9fdf9f;
+}
+.halogene
+{
+    background-color: #ffff80;
+}
+.gaz_rare
+{
+    background-color: #80ccff;
+}
+.vide
+{
+    border: 0px;
+}
