@@ -1,0 +1,3 @@
+s<?PHP
+echo phpinfo();
+?>
