@@ -1,0 +1,526 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#page-container {
+  background-color: #1c2631;
+  position: relative;
+  min-height: 100%;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+.best_sales {
+  width: 75%;
+  margin: auto;
+  margin-top: 2%;
+  background-color: #fe9901;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.best_sellers {
+  width: 140px;
+  height: 150px;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-delay: 0s;
+  text-align: center;
+}
+
+.best_sellers p {
+  margin: auto;
+}
+
+.best_sellers:hover {
+  width: 240px;
+}
+
+.best_sellers_a {
+  text-decoration: none;
+}
+
+
+#content-wrap .cat_book_selector {
+  width: 75%;
+  margin: auto;
+  display: inline;
+}
+
+#content-wrap .cat_book_selector ul {
+  background-color: white;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
+  text-decoration: none;
+}
+
+#content-wrap .cat_book_selector li {
+  flex: 2;
+  min-width: 0em;
+  list-style: none;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition-property: min-width;
+  transition-duration: 1s;
+  transition-delay: 0s;
+}
+
+#content-wrap .cat_book_selector li:hover {
+  flex: 3;
+  background-color: #1c2631;;
+  color: white;
+  min-width: 150px;
+}
+
+#content-wrap .cat_book_selector a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+#content_wrap .cat_book_selector li .sep {
+  flex: 1;
+}
+
+.filtered_books_display {
+  margin: auto;
+}
+
+.filtered_books_display .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.filtered_books_display .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+
+.book_picture_top {
+  height: 100%;
+  float: left;
+  transition: 2s height 0s;
+}
+
+.book_display {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 75%;
+  height: 50px;
+  padding: 15px;
+  margin: auto;
+  overflow: hidden;
+  transition: 2s height 0s;
+}
+
+.book_display:hover {
+  height: 260px;
+}
+
+.book_display:hover .book_picture {
+  height: 100px;
+}
+
+.book_display .book_abstract {
+  width: 0px;
+}
+
+.book_display:hover .book_abstract {
+  width: 150px;
+}
+
+.book_title {
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+.book_tinf {
+  flex: 2;
+  margin-left: 5px;
+  width: 100%;
+}
+
+.book_information {
+  width: 300px;
+}
+.book_information p {
+  display: inline;
+}
+
+.book_abstract {
+  overflow: hidden;
+}
+
+.book_buy {
+  float: right;
+  width: 50px;
+  height: 50px;
+}
+
+.book_picture {
+  height: 50px;
+  float: left;
+  transition: 2s height 0s;
+}
+
+.book_sep {
+  height: 5px;
+}
+
+/*------------------------------------------------------------------------------
+Basket
+------------------------------------------------------------------------------*/
+
+.empty {
+  height: 200px;
+  width: 90%;
+  margin: auto;
+}
+
+.basket {
+  min-height: 20%;
+  width: 75%;
+  background-color: white;
+  border-radius: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.cat0 {
+  flex: 2;
+  width: 50px;
+}
+.cat1 {
+  flex: 3;
+  width: 30%;
+}
+.cat2 {
+  overflow: hidden;
+  text-align: center;
+  flex: 1;
+  width: 30%;
+  flex-direction: column;
+  position: relative;
+}
+
+.pay {
+  position: absolute;
+  bottom: 0;
+  flex: 1;
+  height: 20px;
+  width: 100%;
+}
+
+.pay_up_btn {
+  width: 75%;
+  height: 20px;
+}
+
+.basket_item {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  text-align: center;
+}
+
+/*------------------------------------------------------------------------------
+HEADER / NAVIGATION
+------------------------------------------------------------------------------*/
+
+#navigation {
+  height: 100px;
+  width: 100%;
+  background-color: #232f3d;
+  box-shadow: 0px 1px 10px black;
+  display: flex;
+}
+
+.nav_logo {
+  height: 100px;
+}
+
+.nav_logo_center {
+  height: 100px;
+  margin: auto;
+}
+
+.nav_bar {
+  height: 50px;
+  width: 100%;
+  display: block;
+}
+
+.nav_account {
+  /*background-color: #4a6482;
+  border-radius: 15px 0px 0px 15px;*/
+  width: 250px;
+  height: 50px;
+  display: flex;
+  float: right;
+}
+
+.nav_content {
+  /*background-color: #4a6482;
+  border-radius: 15px 0px 0px 0px;*/
+  width: 100%;
+  height: 50px;
+  float: left;
+}
+
+.nav_account_ico {
+  height: 33px;
+  width: 33px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.nav_items_top {
+  display: flex;
+  flex: 1;
+}
+
+.nav_account a {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+}
+
+.nav_account a:hover {
+  text-decoration: underline;
+}
+
+.nav_search {
+  display: inline-flex;
+}
+
+.nav_search input[type=text] {
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.button_search{
+  padding: 6px;
+  margin-top: 8px;
+}
+
+/*------------------------------------------------------------------------------
+install.php
+------------------------------------------------------------------------------*/
+
+#install_register {
+  background-color: white;
+  width: 450px;
+  height: 350px;
+  margin: 450px auto auto auto;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.first_row_install_form {
+  width: 100%;
+  display: inline-flex;
+}
+
+
+.second_row_install_form {
+  width: 100%;
+  display: block;
+}
+
+.form_install {
+  display: flex;
+  flex: 1;
+  font-size-adjust: auto;
+  padding: 5px;
+}
+
+/*------------------------------------------------------------------------------
+login.php
+------------------------------------------------------------------------------*/
+
+#login {
+  background-color: white;
+  padding-top: 10px;
+  width: 200px;
+  height: 125px;
+  margin: 475px auto auto auto;
+  border-radius: 15px 15px 15px 15px;
+  text-align: center;
+}
+
+#login .error_reg {
+  background-color: white;
+  width: 200px;
+  font-size: 14px;
+  margin-top: -10px;
+  border-radius: 0px 0px 15px 15px;
+  color: red;
+}
+/*------------------------------------------------------------------------------
+register.php
+------------------------------------------------------------------------------*/
+
+#register {
+  background-color: white;
+  padding-top: 10px;
+  width: 200px;
+  height: 200px;
+  margin: 475px auto auto auto;
+  border-radius: 15px 15px 10px 10px;
+  text-align: center;
+}
+
+#register .error_reg {
+  background-color: white;
+  width: 200px;
+  font-size: 14px;
+  margin-top: -15px;
+  border-radius: 0px 0px 15px 15px;
+  color: red;
+}
+
+/*------------------------------------------------------------------------------
+user_account.php
+------------------------------------------------------------------------------*/
+
+#account {
+  width: 75%;
+  min-height: 500px;
+  background-color: white;
+  margin: 50px auto auto auto;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#account .cat_selector {
+  width: 80%;
+  margin: auto;
+}
+
+#account .cat_selector ul {
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
+  text-decoration: none;
+}
+
+#account .cat_selector li {
+  flex: 2;
+  list-style: none;
+  text-align: center;
+}
+
+#account .cat_selector a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+#account .cat_selector a:hover {
+  text-decoration: underline;
+}
+
+#account .cat_selector li .sep {
+  flex: 1;
+}
+
+#account .cat_content {
+  width: 75%;
+  margin: auto;
+}
+
+/*------------------------------------------------------------------------------
+ADMIN
+------------------------------------------------------------------------------*/
+
+#content_admin {
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+
+}
+
+#admin_workzone {
+  position: relative;
+  display: block;
+  background-color: #fe9901;
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  top: 100px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+  padding: 10px;
+}
+
+#user_list {
+  display: block;
+  width: 60%;
+  height: 80%;
+  border: 1px solid black;
+  text-align: left;
+  overflow: auto;
+  padding: 1px;
+  background-color: blanchedalmond;
+}
+
+/*------------------------------------------------------------------------------
+FOOTER
+------------------------------------------------------------------------------*/
+
+footer {
+  background-color: #232f3d;
+  /*background-color: white;*/
+  position: absolute;
+  bottom: 0;/*2.5rem;*/
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_copyright img {
+  width: 50px;
+  vertical-align: sub;
+}

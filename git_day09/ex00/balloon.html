@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            #ball
+            {
+                position: absolute;
+                left: 35%;
+	            top: 25%;
+                background-color: rgb(255, 0, 0);
+                width: 200px;
+                height: 200px;
+                border-radius: 100px;
+                cursor: pointer;
+            }
+        </style>
+        <title>balloon</title>
+    </head>
+    <body>
+        <div id="ball" onmouseout="fout(getComputedStyle(ball).backgroundColor, document.getElementById('ball').offsetWidth)" onclick="fclick(getComputedStyle(ball).backgroundColor, document.getElementById('ball').offsetWidth);">
+        </div>
+        <script>
+                function fclick(colorElement, cote)
+                {
+                    if (colorElement == "rgb(255, 0, 0)")
+                    {
+                        document.getElementById("ball").style.backgroundColor="rgb(0, 0, 255)";
+                    }
+                    else if (colorElement == "rgb(0, 0, 255)")
+                    {
+                        document.getElementById("ball").style.backgroundColor="rgb(0, 128, 0)";
+                    }
+                    else if (colorElement == "rgb(0, 128, 0)")
+                    {
+                        document.getElementById("ball").style.backgroundColor="rgb(255, 0, 0)";
+                    }
+                    if (cote < 420)
+                    {
+                        document.getElementById("ball").style.width = cote + 10 + "px";
+                        document.getElementById("ball").style.height = cote + 10 + "px";
+                        document.getElementById("ball").style.borderRadius = cote / 2 + 5 + "px";
+                    }
+                    else
+                    {
+                        document.getElementById("ball").style.width = 200 + "px";
+                        document.getElementById("ball").style.height = 200 + "px";
+                        document.getElementById("ball").style.borderRadius = 100 + "px";
+                    }
+                }
+                function fout(colorElement, cote)
+                {
+                    if (colorElement == "rgb(0, 128, 0)")
+                    {
+                        document.getElementById("ball").style.backgroundColor="rgb(255, 0, 0)";
+                    }
+                    else if (colorElement == "rgb(255, 0, 0)")
+                    {
+                        document.getElementById("ball").style.backgroundColor="rgb(0, 0, 255)";
+                    }
+                    else if (colorElement == "rgb(0, 0, 255)")
+                    {
+                        document.getElementById("ball").style.backgroundColor="rgb(0, 128, 0)";
+                    }
+                    if (cote > 200)
+                    {
+                        document.getElementById("ball").style.width = cote - 5 + "px";
+                        document.getElementById("ball").style.height = cote - 5 + "px";
+                        document.getElementById("ball").style.borderRadius = (cote - 5) / 2 + "px";
+                    }
+                }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+body
+{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+header
+{
+    font-size: xx-large;
+    font-family : Impact, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-align: center;
+    color: grey;
+}
+
+.flag_left
+{
+    float: left;
+}
+
+.flag_right
+{
+    float: right;
+}
+
+#battlefield
+{
+    border-collapse: collapse;
+    margin: auto;
+    opacity: 0.5;
+}
+
+td
+{
+    border: 1px solid gray;
+    opacity: 0.3;
+    font-size: xx-small;
+    color: white;
+    width: 12px;
+}
+
+tr
+{
+    height: 15px;
+}

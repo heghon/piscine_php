@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script>
+            setInterval("alert('Please, use me ...');", 30000);
+            function calculate(x, y, sign)
+            {
+                var result;
+                if (x < 0 || y < 0)
+                {
+                    alert("Error :(");
+                    console.log("Error :(");
+                }
+                else if ((sign == "/" || sign == "%") && y == 0)
+                {
+                    alert("It's over 9000!");
+                    console.log("It's over 9000!");
+                }
+                else
+                {
+                    if (sign == "+")
+                        result = Number(x) + Number(y);
+                    if (sign == "-")
+                        result = x - y;
+                    if (sign == "/")
+                        result = x / y;
+                    if (sign == "*")
+                        result = x * y;
+                    if (sign == "%")
+                        result = x % y;
+                    alert("result = " + result);
+                    console.log("result = " + result);
+                }
+            }
+        </script>
+        <style>
+        </style>
+        <title>It's maths time !</title>
+    </head>
+    <body>
+        <label for="left_member">left member</label><input type="text" name="left" id="left_member" required/>
+        <select name="sign" id="sign">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+            <option value="%">%</option>
+        </select>
+        <label for="right_member">right member</label><input type="text" name="right" id="right_member" required/>
+        <input type="submit" value="Try me!" onclick="calculate(document.getElementById('left_member').value, document.getElementById('right_member').value, document.getElementById('sign').value);"/>
+    </body>
+</html>
