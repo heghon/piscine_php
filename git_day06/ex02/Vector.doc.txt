@@ -1,0 +1,48 @@
+<- Vector --------------------------------------------------------------------------------
+The Vector class handles the three magnitudes x, y, and z and
+the homogeneous coordinate w.
+
+An instance can be constructed with the obligatory Vertex: 'dest' for destination.
+This is another class, handling coordinates and color.
+You can then add another Vertex, named 'orig', for origin.
+
+These two vertices define the Vector.
+
+All of these informations have to be ordered in an array:
+new Vector( array( 'orig' => $vertex1 );
+So if you add every data possible:
+new Vector( array( 'orig' => $vertex1, 'dest' => $vertex2 ) );
+
+The class provides the following methods : 
+
+Vector get*();
+This is a common getter, where you replace the '*' by any data you want.
+It returns the value of the data you asked.
+
+Vector magnitude(); 
+return in a float the 'length' or the 'norme' of the Vector.
+
+Vector normalize();
+return a normalized version of the Vector.
+
+Vector add( Vector $rhs );
+return the sum Vector of the two Vectors.
+
+Vector sub( Vector $rhs);
+return the difference Vector of the two Vectors.
+
+Vector opposite();
+return the opposite Vector.
+
+Vector scalarProduct( $k );
+return the product of the Vector with the scalar k.
+
+Vector dotProduct( Vector $rhs );
+return the scalar product of the two Vectors.
+
+Vector cos( Vector $rhs );
+return the angle cosinus between the two Vectors.
+
+Vector crossProduct ( Vector $rhs );
+return the cross product of the two Vectors (right hand system).
+-------------------------------------------------------------------------------- Vector ->

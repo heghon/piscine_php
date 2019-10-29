@@ -1,0 +1,34 @@
+<- Matrix ----------------------------------------------------------------------
+The Matrix class handles some 4x4 matrixes.
+
+An instance can be constructed with the obligatory string: 'preset'.
+This is the way to ask for the matrix you desire.
+
+You then had to add different parameters:
+nothing more for preset = "IDENTITY".
+for preset = "SCALE", you have to add the 'scale' factor.
+for preset = "RX" or "RY" or "RZ", you have to add the 'angle' factor.
+for preset = "TRANSLATION", you have to add the translation Vector.
+for preset = "PROJECTION", you have to add different factors:
+    - 'fov' or field of view of the projection in degrees
+    - the 'ratio' of the projected image
+    - 'near' or the clipping plan near to the projection
+    - 'far' or the clipping plan far to the projection
+
+All of these informations have to be ordered in an array:
+new Matrix( array( 'preset' => Matrix::IDENTITY );
+So for a projection:
+$P = new Matrix( array( 'preset' => Matrix::PROJECTION,
+						'fov' => 60,
+						'ratio' => 640/480,
+						'near' => 1.0,
+						'far' => -50.0 ) );
+
+The class provides the following methods : 
+
+Matrix mult( Vector $rhs );
+This function allows you to make a multiplication of two 4x4 matrixes.
+
+Matrix transformVertex(Vertex $vtx);
+This function allows you to have a transformed vertex by the matrix.
+---------------------------------------------------------------------- Matrix ->

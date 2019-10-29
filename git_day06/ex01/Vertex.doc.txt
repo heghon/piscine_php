@@ -1,0 +1,24 @@
+<- Vertex --------------------------------------------------------------------------------
+The Vertex class handles the three spatial coordinates x, y, and z,
+the homogeneous coordinate w, and the color, a class handling RGB colors.
+
+An instance can be constructed with the obligatory x, y, and z coordinates.
+You can then add the w coordinate (or the value of 1.0 is applied),
+and/or the color (or the color white is applied).
+
+All of these informations have to be ordered in an array:
+new Vertex( array( 'x' => 2.0, 'y' => 0.0, 'z' => 2.4 ) );
+So if you add every data possible:
+new Vertex( array( 'x' => 2.0, 'y' => 0.0, 'z' => 2.4, 'w' => 2.0, 'color' => $green ) );
+
+The class provides the following methods : 
+
+Vertex  get*();
+This is a common getter, where you replace the '*' by any data you want.
+It returns the value of the data you asked.
+
+Vertex  set*( $data );
+This is a common setters, where you replace the '*' by any data you want to change.
+It sets the '*' value by putting the data you gave.
+Of course, the data has to be the same type.
+-------------------------------------------------------------------------------- Vertex ->
